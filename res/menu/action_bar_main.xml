@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.almightyapp.MainActivity" >
+
+    <item
+        android:id="@+id/journal_new_entry"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_action_new_event"
+        android:title="@string/action_new_entry"
+        android:showAsAction="always" />
+    
+    <item
+        android:id="@+id/user_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_user_settings"/>
+
+</menu>

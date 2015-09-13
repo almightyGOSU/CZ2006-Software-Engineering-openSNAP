@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.almightyapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <!-- Uses Permissions -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <!-- Uses Features -->
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        
+        android:supportsRtl="false" >
+        
+        <activity
+            android:name="com.example.almightyapp.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:logo="@drawable/app_icon"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.almightyapp.RegistrationActivity"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:logo="@drawable/app_icon"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.example.almightyapp.MainActivity"
+            android:screenOrientation="portrait"
+            android:logo="@drawable/app_icon" >
+        </activity>
+        
+        <activity
+            android:name="com.example.almightyapp.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="@string/title_edit_profile" >
+        </activity>
+        
+        <activity
+        	android:name="com.example.almightyapp.EntryActivity"
+        	android:parentActivityName=".MainActivity"
+        	android:screenOrientation="portrait"
+        	android:logo="@drawable/app_icon"
+        	android:windowSoftInputMode="stateHidden" >
+    	</activity>
+        
+    </application>
+</manifest>

@@ -1,0 +1,27 @@
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    tools:context="com.example.almightyapp.MainActivity" >
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF222222"
+        android:drawSelectorOnTop="false" />
+
+    <ImageView
+        android:id="@id/android:empty"
+        android:contentDescription="@string/journal_emptyJournal"
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#444444"
+        android:src="@drawable/empty_journal" />
+    
+</RelativeLayout>

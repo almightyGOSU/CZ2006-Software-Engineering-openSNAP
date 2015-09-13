@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="AlwaysShowAction">
+        <ignore path="res/menu/action_bar_main.xml" />
+    </issue>
+    <issue id="LabelFor" severity="ignore" />
+    <issue id="OldTargetApi">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="RtlEnabled" severity="ignore" />
+    <issue id="UseCompoundDrawables">
+        <ignore path="res/layout/crop_selector.xml" />
+    </issue>
+</lint>

@@ -1,0 +1,317 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:id="@+id/layout_activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context="com.example.almightyapp.RegistrationActivity"
+    tools:ignore="MergeRootFrame"
+    
+    android:background="#111111" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:fillViewport="true"
+        tools:ignore="UselessParent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        
+        android:saveEnabled="true" >
+        
+        <TextView
+            android:id="@+id/tv_Registration_LoginInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginStart="5dp"   
+            android:layout_marginTop="20dp"
+            
+            android:text="@string/login_info"
+            android:textColor="#EEEEEE"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_Registration_Email"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignStart="@id/tv_Registration_LoginInfo"         
+            android:layout_below="@+id/tv_Registration_LoginInfo"
+            android:layout_marginTop="30dp"
+            
+            android:text="@string/email"
+            android:textColor="#EEEEEE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_Registration_Password1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignStart="@id/tv_Registration_Email"
+            android:layout_below="@id/tv_Registration_Email"
+            android:layout_marginTop="20dp"
+            
+            android:text="@string/password"
+            android:textColor="#EEEEEE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_Registration_Password2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignStart="@id/tv_Registration_Email"
+            android:layout_below="@id/tv_Registration_Password1"
+            android:layout_marginTop="20dp"
+            
+            android:text="@string/password"
+            android:textColor="#EEEEEE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_Registration_Email"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@id/tv_Registration_Email"
+            
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/tv_Registration_Password1"
+            
+            android:hint="@string/email_prompt"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:gravity="center"
+			
+			android:textColorHint="#CCFF6000"
+		    android:textColor="#EEEEEE"
+            android:background="@drawable/edit_text_with_border"
+            android:textCursorDrawable="@null"
+            android:typeface="monospace"
+            
+            android:imeOptions="actionNext"
+            android:saveEnabled="true" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_Registration_Password1"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            
+            android:layout_alignBottom="@id/tv_Registration_Password1"
+            android:layout_alignStart="@id/et_Registration_Email"
+            
+            android:hint="@string/pw_prompt"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+			android:gravity="center"
+			
+			android:textColorHint="#CCFF6000"
+		    android:textColor="#EEEEEE"
+            android:background="@drawable/edit_text_with_border"
+            android:textCursorDrawable="@null"
+            
+            android:imeOptions="actionNext"
+            android:saveEnabled="true" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_Registration_Password2"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            
+            android:layout_alignBottom="@id/tv_Registration_Password2"
+            android:layout_alignStart="@id/et_Registration_Email"
+            
+            android:hint="@string/re_enter_pw_prompt"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+			android:gravity="center"
+			
+			android:textColorHint="#CCFF6000"
+		    android:textColor="#EEEEEE"
+            android:background="@drawable/edit_text_with_border"
+            android:textCursorDrawable="@null"
+            
+            android:imeOptions="actionNext"
+            android:saveEnabled="true" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_UserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignStart="@id/tv_Registration_Email"
+            android:layout_below="@+id/tv_Registration_Password2"
+            android:layout_marginTop="40dp"
+            
+            android:text="@string/user_info"
+            android:textColor="#EEEEEE"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignStart="@id/tv_Registration_Email"
+            android:layout_below="@id/tv_UserInfo"
+            android:layout_marginTop="30dp"
+            
+            android:text="@string/name"
+            android:textColor="#EEEEEE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignStart="@id/tv_Registration_Email"
+            android:layout_below="@id/tv_Name"
+            android:layout_marginTop="20dp"
+            
+            android:text="@string/age"
+            android:textColor="#EEEEEE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignStart="@id/tv_Registration_Email"
+            android:layout_below="@id/tv_Age"
+            android:layout_marginTop="20dp"
+            
+            android:text="@string/gender"
+            android:textColor="#EEEEEE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_Registration_Name"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            
+            android:layout_alignBottom="@id/tv_Name"
+            android:layout_alignStart="@id/et_Registration_Email"
+            
+            android:hint="@string/name_prompt"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+			android:gravity="center"
+			
+			android:textColorHint="#CCFF6000"
+		    android:textColor="#EEEEEE"
+            android:background="@drawable/edit_text_with_border"
+            android:textCursorDrawable="@null"
+            android:typeface="monospace"
+            
+            android:imeOptions="actionNext"
+            android:saveEnabled="true" >         
+        </EditText>
+        
+        <EditText
+            android:id="@+id/et_Registration_Age"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            
+            android:layout_alignBottom="@id/tv_Age"
+            android:layout_alignStart="@id/et_Registration_Email"
+            
+            android:hint="@string/age_prompt"
+            android:inputType="number"
+            android:textSize="16sp"
+			android:gravity="center"
+			
+			android:textColorHint="#CCFF6000"
+		    android:textColor="#EEEEEE"
+            android:background="@drawable/edit_text_with_border"
+            android:textCursorDrawable="@null"
+            android:typeface="monospace"
+            
+            android:imeOptions="actionDone"
+            android:saveEnabled="true" >
+        </EditText>
+
+        <RadioGroup
+            android:id="@+id/radioGroup_Gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignStart="@id/et_Registration_Email"
+            android:layout_alignTop="@+id/tv_Gender" >
+
+            <RadioButton
+                android:id="@+id/radio_btn_Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                
+                android:text="@string/gender_male"
+                android:textColor="#EEEEEE"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text="@string/gender_female"
+                android:textColor="#EEEEEE"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_Registration_Register"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentEnd="true"  
+            android:layout_below="@id/radioGroup_Gender"
+            android:layout_marginTop="20dp"
+            
+            android:background="#CCFF6000"
+            
+            android:text="@string/register"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#EEEEEE"
+            
+            android:clickable="true" />
+        
+        <ProgressBar
+            android:id="@+id/progBar_Registration"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignTop="@+id/btn_Registration_Register"
+            android:layout_centerHorizontal="true"
+            
+            android:visibility="invisible" />
+        
+    </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

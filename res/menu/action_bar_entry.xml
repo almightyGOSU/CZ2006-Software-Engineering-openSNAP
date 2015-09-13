@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.almightyapp.MainActivity" >
+
+    <!-- Action bar icons for new entry -->
+    <item
+        android:id="@+id/entry_action_accept"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_accept"
+        android:title="@string/entry_action_accept"
+        android:showAsAction="always" />
+    
+    <item
+        android:id="@+id/entry_action_cancel"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_action_cancel"
+        android:title="@string/entry_action_cancel"
+        android:showAsAction="always" />
+    
+    <!-- Action bar icons for new entry -->
+    <item
+        android:id="@+id/entry_action_share"
+        android:orderInCategory="300"
+        android:icon="@drawable/ic_action_share"
+        android:title="@string/entry_action_share"
+        android:showAsAction="always" />
+    
+    <item
+        android:id="@+id/entry_action_edit"
+        android:orderInCategory="400"
+        android:icon="@drawable/ic_action_edit"
+        android:title="@string/entry_action_edit"
+        android:showAsAction="always" />
+    
+    <item
+        android:id="@+id/entry_action_discard"
+        android:orderInCategory="500"
+        android:icon="@drawable/ic_action_discard"
+        android:title="@string/entry_action_discard"
+        android:showAsAction="always" />
+
+</menu>

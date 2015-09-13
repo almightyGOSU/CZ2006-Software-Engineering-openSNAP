@@ -1,0 +1,327 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:id="@+id/layout_activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context="com.example.almightyapp.EntryActivity"
+    tools:ignore="MergeRootFrame" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:fillViewport="true"
+        tools:ignore="UselessParent" >
+        
+	   	<RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        
+	        android:paddingBottom="@dimen/activity_vertical_margin"
+	        android:paddingLeft="@dimen/activity_horizontal_margin"
+	        android:paddingRight="@dimen/activity_horizontal_margin"
+	        android:paddingTop="@dimen/activity_vertical_margin"
+	        
+	        android:background="#444444"
+	        android:saveEnabled="true" >
+	                
+	        <ImageView
+	            android:id="@+id/iv_Entry_productImage"
+	            android:layout_width="200dp"
+	            android:layout_height="200dp"
+	            
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="20dp"
+	            
+	            android:scaleType="fitXY"
+	            android:src="@drawable/entry_add_image"
+	            android:contentDescription="@string/product_image"
+	            android:background="@drawable/background_light"
+	            
+	            android:clickable="true" />
+	        
+	        <EditText
+	            android:id="@+id/et_Entry_productName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            
+	            android:layout_below="@id/iv_Entry_productImage"
+	            android:layout_marginTop="15dp"
+	            android:layout_centerHorizontal="true"
+	            
+	            android:hint="@string/product_name_prompt"
+	            android:textColorHint="#EE223333"
+	            android:inputType="text"
+	            android:imeOptions="actionDone"
+	            
+	            android:background="@drawable/background_light"
+	            android:paddingLeft="8dp"
+	            android:paddingStart="8dp"
+	            android:paddingRight="8dp"
+	            
+	            android:textColor="#FF000000"
+	            android:textSize="22sp"
+	            android:textStyle="bold"
+	            android:typeface="serif"
+	            
+	            android:gravity="center"
+	            android:maxLength="20" />
+	        
+	        <TextView
+	            android:id="@+id/tv_Entry_productManufacturer"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            
+	            android:layout_below="@id/et_Entry_productName"
+	            android:layout_marginTop="20dp"
+	            
+	            android:paddingLeft="8dp"
+	            android:paddingStart="8dp"
+	            android:paddingRight="8dp"
+	            
+	            android:text="@string/product_manufacturer"
+	            android:textColor="#FF000000"
+	            android:textSize="22sp"
+	            android:textStyle="bold"
+	            android:typeface="serif" />
+	        
+	        <Spinner
+    			android:id="@+id/spinner_Entry_productManufacturer"
+    			android:spinnerMode="dialog"
+    			android:background="@drawable/background_light"
+    			
+    			android:layout_below="@id/tv_Entry_productManufacturer"
+    			android:layout_marginTop="5dp"
+    			
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			
+    			android:prompt="@string/dd_product_manufacturer" />
+	        
+	        <TextView
+	            android:id="@+id/tv_Entry_packagingType"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            
+	            android:layout_below="@id/spinner_Entry_productManufacturer"
+	            android:layout_marginTop="10dp"
+	            
+	            android:paddingLeft="8dp"
+	            android:paddingStart="8dp"
+	            android:paddingRight="8dp"
+	            
+	            android:text="@string/product_packaging_type"
+	            android:textColor="#FF000000"
+	            android:textSize="22sp"
+	            android:textStyle="bold"
+	            android:typeface="serif" />
+	        
+	        <Spinner
+    			android:id="@+id/spinner_Entry_packagingType"
+    			android:spinnerMode="dialog"
+    			android:background="@drawable/background_light"
+    			
+    			android:layout_below="@id/tv_Entry_packagingType"
+    			android:layout_marginTop="5dp"
+    			
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			
+    			android:prompt="@string/dd_packaging_type" />
+	
+	        <LinearLayout
+	            android:id="@+id/grp_Entry_overallRating"
+	            android:background="@drawable/background_light"
+	            
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            
+	            android:layout_below="@id/spinner_Entry_packagingType"
+	            android:layout_marginTop="30dp"
+	            
+	            android:orientation="vertical" >
+	            
+	            <TextView
+	            android:id="@+id/tv_Entry_overallRating"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            
+	            android:paddingLeft="8dp"
+	            android:paddingStart="8dp"
+	            android:paddingRight="8dp"
+	            
+	            android:text="@string/overall_rating"
+	            android:textColor="#FF000000"
+	            android:textSize="22sp"
+	            android:textStyle="bold"
+	            android:typeface="serif" />
+	            
+		        <!-- This Rating Bar should not be editable -->
+		        <!-- Value should be calculated based on the other 3 ratings -->
+		        <!-- Default rating of 1 -->
+		        <RatingBar
+		            android:id="@+id/rb_Entry_overallRating"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            
+		            android:rating="1"
+		            android:isIndicator="true"/>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/grp_Entry_easeRating"
+	            android:background="@drawable/background_light"
+	            
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            
+	            android:layout_below="@id/grp_Entry_overallRating"
+	            android:layout_marginTop="5dp"
+	            
+	            android:orientation="vertical" >
+	        
+		        <TextView
+			            android:id="@+id/tv_Entry_easeRating"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            
+			            android:paddingLeft="8dp"
+	            		android:paddingStart="8dp"
+	            		android:paddingRight="8dp"
+			            
+			            android:text="@string/ease_rating"
+			            android:textColor="#FF000000"
+			            android:textSize="20sp"
+			            android:textStyle="bold"
+			            android:typeface="serif" />
+		
+		        <RatingBar
+		            android:id="@+id/rb_Entry_easeRating"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            
+		            android:rating="1"
+		            android:stepSize="1" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/grp_Entry_safetyRating"
+	            android:background="@drawable/background_light"
+	            
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            
+	            android:layout_below="@id/grp_Entry_easeRating"
+	            android:layout_marginTop="5dp"
+	            
+	            android:orientation="vertical" >
+	        
+		        <TextView
+		            android:id="@+id/tv_Entry_safetyRating"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            
+		            android:paddingLeft="8dp"
+	            	android:paddingStart="8dp"
+	            	android:paddingRight="8dp"
+		            
+		            android:text="@string/safety_rating"
+		            android:textColor="#FF000000"
+		            android:textSize="20sp"
+		            android:textStyle="bold"
+		            android:typeface="serif" />
+		
+		        <RatingBar
+		            android:id="@+id/rb_Entry_safetyRating"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            
+		            android:rating="1"
+		            android:stepSize="1" />
+		    </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/grp_Entry_resealRating"
+	            android:background="@drawable/background_light"
+	            
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            
+	            android:layout_below="@id/grp_Entry_safetyRating"
+	            android:layout_marginTop="5dp"
+	            
+	            android:orientation="vertical" >
+		        
+		        <TextView
+		            android:id="@+id/tv_Entry_resealRating"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            
+		            android:paddingLeft="8dp"
+	            	android:paddingStart="8dp"
+	            	android:paddingRight="8dp"
+		            
+		            android:text="@string/reseal_rating"
+		            android:textColor="#FF000000"
+		            android:textSize="20sp"
+		            android:textStyle="bold"
+		            android:typeface="serif" />
+		
+		        <RatingBar
+		            android:id="@+id/rb_Entry_resealRating"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            
+		            android:rating="1"
+		            android:stepSize="1" />
+		    </LinearLayout>
+	        
+	        <TextView
+	            android:id="@+id/tv_Entry_comment"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            
+	            android:layout_below="@id/grp_Entry_resealRating"
+	            android:layout_marginTop="15dp"
+	            
+	            android:paddingLeft="8dp"
+	            android:paddingStart="8dp"
+	            android:paddingRight="8dp"
+	            
+	            android:text="@string/product_comment"
+	            android:textColor="#FF000000"
+	            android:textSize="22sp"
+	            android:textStyle="bold"
+	            android:typeface="serif" />
+	        
+	        <EditText
+	            android:id="@+id/et_Entry_comment"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            
+	            android:layout_below="@id/tv_Entry_comment"
+	            android:layout_marginTop="5dp"
+	            
+	            android:hint="@string/product_comment_prompt"
+	            android:textColorHint="#EE223333"
+	            android:inputType="text"
+	            android:imeOptions="actionDone"
+	            
+	            android:background="@drawable/background_light"
+	            android:paddingLeft="8dp"
+	            android:paddingStart="8dp"
+	            android:paddingRight="8dp"
+	            
+	            android:textColor="#FF000000"
+	            android:textSize="22sp"
+	            android:textStyle="bold"
+	            android:typeface="serif"
+	            
+	            android:gravity="center_horizontal"
+	            android:maxLength="25" />
+	        
+	    </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

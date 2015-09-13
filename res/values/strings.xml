@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- Overall Application Strings -->
+    <string name="app_name">openSNAP</string>
+    
+    <!-- Login Activity Strings -->
+    <string name="email">Email: </string>
+    <string name="email_prompt">Enter your email</string>
+    <string name="password">Password: </string>  
+    <string name="password_prompt">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="new_user_prompt"><u>Sign Up for openSNAP</u></string>
+    
+    <!-- Registration Activity Strings -->
+    <string name="login_info"><u>Login Information</u></string>
+    <string name="valid_email_prompt">Enter a valid email</string>
+    <string name="pw_prompt">Enter your password</string>
+    <string name="re_enter_pw_prompt">Re-enter password</string>
+    <string name="user_info"><u>Personal Information</u></string>
+    <string name="name">Name:</string>
+    <string name="name_prompt">Enter your name</string>
+    <string name="age">Age: </string>
+    <string name="age_prompt">Enter your age</string>
+    <string name="gender">Gender:</string>   
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="register">Register</string>
+    <string name="registration">Registration</string>
+    
+    <!-- Main Activity Strings -->
+    <string name="tab_journal"><b>Journal</b></string>
+    <string name="tab_browse"><b>Browse</b></string>
+    <string name="action_new_entry">New Entry</string>
+    <string name="action_search">Search</string>
+    <string name="action_user_settings">User Settings</string>
+    
+    <!-- Edit Profile Actvity Strings -->
+    <string name="title_edit_profile"><b>Edit User Profile</b></string>
+    <string name="new_pw_prompt">Enter new password</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="update_profile_cancel">Cancel</string>
+    
+    <!-- Journal Fragment Strings -->
+    <string name="load_journal"><b>Load Journal</b></string>
+    <string name="journal_loading_error">Unable to load journal entries</string>
+    <string name="journal_emptyJournal">Empty Journal Image</string>
+    <string name="journal_listItem_productImage">List Item Product Image</string>
+    
+    <!-- Browse Fragment Strings -->
+    <string name="load_products"><b>Load Products</b></string>
+    <string name="browse_reload">Reload</string>
+    <string name="maintenance">Maintenance break</string>
+    
+    <!-- Entry Activity Strings -->
+    <string name="product_image">Product Image</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_name_prompt">Enter Product Name</string>
+    <string name="product_manufacturer">Product Manufacturer:</string>
+    <string name="product_packaging_type">Packaging Type:</string>
+    
+    <string name="overall_rating">Overall Rating:</string>
+    <string name="ease_rating">Ease of Opening:</string>
+    <string name="safety_rating">Safety of Packaging:</string>
+    <string name="reseal_rating">Resealability of Packaging:</string>
+    <string name="product_comment">Packaging Review:</string>
+    <string name="product_comment_prompt">Enter Packaging Review</string>
+    
+    <string name="image_crop_option_icon">Image crop option icon</string>
+    
+    <!-- Entry Activity Progress Dialog Strings -->
+    <string name="load_entry"><b>Load Entry</b></string>
+    <string name="update_entry"><b>Update Entry</b></string>
+    <string name="delete_entry"><b>Delete Entry</b></string>
+    
+    <!-- Entry Activity Action Bar Strings -->
+    <string name="entry_action_accept">Accept</string>
+    <string name="entry_action_cancel">Cancel</string>
+    <string name="entry_action_share">Share</string>
+    <string name="entry_action_edit">Edit</string>
+    <string name="entry_action_discard">Discard</string>
+    
+    <!-- Product Manufacturers Dropdown Menu Strings -->
+    <string name="dd_product_manufacturer"><b>Product Manufacturer</b></string>
+    <string-array name="dd_manufacturers_array">
+        <item>Kraft</item>
+        <item>Marigold</item>
+        <item>Meiji</item>
+        <item>Nestle</item>
+        <item>Quaker</item>
+    </string-array>
+    
+    <!-- Product Packaging Type Dropdown Menu Strings -->
+    <string name="dd_packaging_type"><b>Packaging Type</b></string>
+    <string-array name="dd_packaging_type_array">
+        <item>Bag</item>
+        <item>Bottle</item>
+        <item>Box</item>
+        <item>Can</item>
+        <item>Carton</item>
+        <item>Tub</item>
+        <item>Wrapper</item>
+    </string-array>
+
+</resources>
