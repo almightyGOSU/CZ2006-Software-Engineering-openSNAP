@@ -1,5 +1,5 @@
-# CZ2006_Software_Engineering_openSNAP
+# openSNAP
 
-Android Project for CZ2006 Software Engineering, AY 2014/15 Semester 1
+Android Application developed for CZ2006 Software Engineering, AY 2014/15 Semester 1
 
 Back-end server: https://github.com/yuan3y/OpenSnap
